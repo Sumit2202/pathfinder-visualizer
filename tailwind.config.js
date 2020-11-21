@@ -714,6 +714,9 @@ module.exports = {
       40: '40',
       50: '50',
     },
+    extend: {
+      fontFamily: { sans: ['Inter var'] },
+     }
   },
   variantOrder: [
     'first',
@@ -851,5 +854,7 @@ module.exports = {
     wordBreak: ['responsive'],
     zIndex: ['responsive', 'focus-within', 'focus'],
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/ui')
+  ],
 }
